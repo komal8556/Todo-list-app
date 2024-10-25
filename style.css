@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: #2A2F4F;
+    --secondary-color: #FFF8FC;
+    --tertiary-color: #F8DEEE;
+}
+
+ul{
+    list-style: none;
+}
+
+input,
+button{
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    user-select: none;
+}
+
+.container{
+    background-color: var(--secondary-color);
+    padding: 2rem;
+    border-radius: 18px;
+    min-height: 34rem;
+}
+
+.container .heading input{
+    width: 27rem;
+    border: none;
+    outline: none;
+    color: var(--primary-color);
+    background-color: var(--tertiary-color);
+    padding: 0.9rem 1rem;
+    font-size: 1rem;
+    border-radius: 8px;
+
+}
+
+.container .heading button{
+    font-size: 1.1rem;
+    border: none;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 0.8rem 1rem;
+    border-radius: 8px;
+    margin-left: 0.8rem;
+}
+
+.container .heading button:hover{
+    background-color: #1d213e;
+}
+
+.container #error{
+    font-size: 0.8rem;
+    color: rgb(235, 4, 4);
+}
+
+.container .tasks_list{
+    margin-top: 2.2rem;
+    
+}
+
+.container .tasks_list li{
+    color: var(--primary-color);
+    background-color: var(--tertiary-color);
+    padding: 0.9rem 1rem;
+    font-size: 1rem; 
+    border-radius: 8px;
+    margin-top: 0.8rem;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.container .tasks_list li.checked, 
+.container.tasks_list li p.checked{
+    text-decoration: line-through;
+}
+
+.container .tasks_list li i{
+    font-size: 1.4rem;
+    margin-left: 4px;
+}
